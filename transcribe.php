@@ -92,6 +92,21 @@ if ($fileSize <= $maxSize) {
 unlink($tempWav);
 log_message("Finished transcription. Output length: " . strlen($outputText));
 
+$baseFilename = pathinfo($inputFile, PATHINFO_FILENAME);
+$outputFile = $baseFilename . '.txt';
+
+// Save to original input folder
+file_put_contents($inputFolder . $outputFile, trim($outputText));
+log_message("Saved transcription to: " . $inputFolder . $outputFile);
+
+// Save to transcribed/ folder
+$transcribedFolder = __DIR__ . '/transcribed/';
+if (!is_dir($transcribedFolder)) {
+    mkdir($transcribedFolder, 0775, true);
+}
+file_put_contents($transcribedFolder . $outputFile, trim($outputText));
+log_message("Saved transcription copy to: " . $transcribedFolder . $outputFile);
+
 echo json_encode(['success' => true, 'text' => trim($outputText)]);
 
 function transcribe_chunk($filePath, $apiKey, $language) {
