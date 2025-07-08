@@ -7,6 +7,7 @@ if (!file_exists($configPath)) {
     echo json_encode(['success' => false, 'error' => 'Credentials file missing.']);
     exit;
 }
+
 $config = require $configPath;
 $apiKey = $config['openai_api_key'];
 $inputFolder = '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/';
@@ -26,12 +27,14 @@ if (!$inputFile || !file_exists($inputFolder . $inputFile)) {
 $inputPath = $inputFolder . $inputFile;
 $outputText = '';
 
+// Convert to WAV 16kHz mono
+$ffmpegCommand = "ffmpeg -y -i " . escapeshellarg($inputPath) . " -ar 16000 -ac 1 -c:a pcm_s16le " . escapeshellarg($tempWav) . " 2>&1" .",". $ffmpegOut."," $code;
 exec("ffmpeg -y -i " . escapeshellarg($inputPath) . " -ar 16000 -ac 1 -c:a pcm_s16le " . escapeshellarg($tempWav) . " 2>&1", $ffmpegOut, $code);
-if ($code !== 0) {
+if ($code !== 0 || !file_exists($tempWav)) {
     echo json_encode([
         'success' => false,
         'error' => 'FFmpeg conversion failed.',
-        'ffmpeg_output' => implode(PHP_EOL, $ffmpegOut)
+        'ffmpeg_output' => implode("\n", $ffmpegOut)
     ]);
     exit;
 }
@@ -46,7 +49,7 @@ if ($fileSize <= $maxSize) {
 
     for ($start = 0; $start < $durationSec; $start += $chunkDuration) {
         $chunkFile = $chunkPrefix . $chunkIndex . '.wav';
-        $cmd = "ffmpeg -y -i " . escapeshellarg($tempWav) . " -ss $start -t $chunkDuration -c copy " . escapeshellarg($chunkFile);
+        $cmd = "ffmpeg -y -i " . escapeshellarg($tempWav) . " -ss $start -t $chunkDuration -c copy " . escapeshellarg($chunkFile) . " 2>&1";
         exec($cmd, $splitOut, $splitCode);
 
         if (!file_exists($chunkFile)) break;
