@@ -29,7 +29,7 @@ $outputText = '';
 // Convert to WAV 16kHz mono
 exec("ffmpeg -y -i " . escapeshellarg($inputPath) . " -ar 16000 -ac 1 -c:a pcm_s16le " . escapeshellarg($tempWav), $out, $code);
 if ($code !== 0 || !file_exists($tempWav)) {
-    echo json_encode(['success' => false, 'error' => 'FFmpeg conversion failed.']);
+    echo json_encode(['success' => false, 'error' => 'FFmpeg conversion failed - signed.']);
     exit;
 }
 
