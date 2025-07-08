@@ -46,6 +46,8 @@
 
 <script>
 const apiEndpoint = 'transcribe.php';
+const checkInterval = 3000; // ms
+const maxAttempts = 20; // try for 60 seconds (20 x 3s)
 
 async function fetchAudioFiles() {
   const response = await fetch('list_audio.php');
@@ -60,6 +62,33 @@ async function fetchAudioFiles() {
   });
 }
 
+async function fileExists(url) {
+  try {
+    const res = await fetch(url, { method: 'HEAD' });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+async function pollForFile(url, attempt = 1) {
+  if (attempt > maxAttempts) {
+    document.getElementById('transcriptionOutput').textContent = '❌ Transcription timeout. Please try again.';
+    return;
+  }
+
+  const exists = await fileExists(url);
+  if (exists) {
+    const dlBtn = document.getElementById('downloadBtn');
+    dlBtn.href = url;
+    dlBtn.download = url.split('/').pop();
+    dlBtn.classList.remove('d-none');
+    document.getElementById('transcriptionOutput').textContent = '✅ Transcription completed.';
+  } else {
+    setTimeout(() => pollForFile(url, attempt + 1), checkInterval);
+  }
+}
+
 async function startTranscription() {
   const file = document.getElementById('audioFile').value;
   const lang = document.getElementById('language').value;
@@ -67,6 +96,7 @@ async function startTranscription() {
 
   const output = document.getElementById('transcriptionOutput');
   output.textContent = '⏳ Transcribing...';
+
   const response = await fetch(apiEndpoint, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -74,12 +104,12 @@ async function startTranscription() {
   });
 
   const data = await response.json();
+  const txtFileUrl = '/transcribe/transcribed/' + file.replace(/\.mp3$/, '.txt');
+
   if (data.success) {
-    output.textContent = '✅ Transcription complted.';
-    const dlBtn = document.getElementById('downloadBtn');
-    dlBtn.href = '/transcribe/transcribed/' + file.replace(/\.mp3$/, '.txt');
-    dlBtn.download = file.replace(/\.mp3$/, '.txt');
-    dlBtn.classList.remove('d-none');
+    // Now start polling for the .txt file existence
+    output.textContent = '⏳ Waiting for transcription file...';
+    pollForFile(txtFileUrl);
   } else {
     output.textContent = '❌ Transcription failed: ' + (data.error || 'Unknown error');
   }
@@ -88,5 +118,6 @@ async function startTranscription() {
 document.getElementById('startBtn').addEventListener('click', startTranscription);
 document.addEventListener('DOMContentLoaded', fetchAudioFiles);
 </script>
+
 </body>
 </html>
