@@ -2,7 +2,7 @@
 // transcribe.php
 header('Content-Type: application/json');
 
-$logFile = __DIR__ . '/transcribe.log';
+$logFile = 'transcribe.log';
 
 function log_message($message) {
     global $logFile;
