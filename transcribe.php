@@ -28,12 +28,12 @@ $inputPath = $inputFolder . $inputFile;
 $outputText = '';
 
 // Convert to WAV 16kHz mono
-$ffmpegCommand = "ffmpeg -y -i " . escapeshellarg($inputPath) . " -ar 16000 -ac 1 -c:a pcm_s16le " . escapeshellarg($tempWav) . " 2>&1" .",". $ffmpegOut."," $code;
+$ffmpegCommand = "ffmpeg -y -i " . escapeshellarg($inputPath) . " -ar 16000 -ac 1 -c:a pcm_s16le " . escapeshellarg($tempWav) . " 2>&1" .",". $ffmpegOut.",". $code;
 exec("ffmpeg -y -i " . escapeshellarg($inputPath) . " -ar 16000 -ac 1 -c:a pcm_s16le " . escapeshellarg($tempWav) . " 2>&1", $ffmpegOut, $code);
 if ($code !== 0 || !file_exists($tempWav)) {
     echo json_encode([
         'success' => false,
-        'error' => 'FFmpeg conversion failed.',
+        'error' => 'FFmpeg conversion failed.'.$ffmpegCommand,
         'ffmpeg_output' => implode("\n", $ffmpegOut)
     ]);
     exit;
