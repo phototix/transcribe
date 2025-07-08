@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Audio Transcriber</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #transcriptionOutput {
+      white-space: pre-wrap;
+      height: 400px;
+      overflow-y: auto;
+      background: #f8f9fa;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+<div class="container py-4">
+  <h1 class="mb-4">AI Audio Transcriber</h1>
+  <div class="row">
+    <div class="col-md-5">
+      <div class="mb-3">
+        <label for="audioFile" class="form-label">Select Audio File</label>
+        <select id="audioFile" class="form-select">
+          <option value="">-- Choose a file --</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="language" class="form-label">Language</label>
+        <select id="language" class="form-select">
+          <option value="en">English</option>
+          <option value="zh">Chinese</option>
+        </select>
+      </div>
+      <button id="startBtn" class="btn btn-primary">Start Transcription</button>
+      <a id="downloadBtn" class="btn btn-success d-none mt-3" download>Download Transcription</a>
+    </div>
+    <div class="col-md-7">
+      <h5>Transcription Output</h5>
+      <div id="transcriptionOutput">Please select a file and click "Start Transcription".</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const apiEndpoint = 'transcribe.php';
+
+async function fetchAudioFiles() {
+  const response = await fetch('list_audio.php');
+  const files = await response.json();
+  const select = document.getElementById('audioFile');
+  select.innerHTML = '<option value="">-- Choose a file --</option>';
+  files.forEach(file => {
+    const opt = document.createElement('option');
+    opt.value = file;
+    opt.textContent = file;
+    select.appendChild(opt);
+  });
+}
+
+async function startTranscription() {
+  const file = document.getElementById('audioFile').value;
+  const lang = document.getElementById('language').value;
+  if (!file) return alert('Please select an audio file');
+
+  const output = document.getElementById('transcriptionOutput');
+  output.textContent = '⏳ Transcribing...';
+  const response = await fetch(apiEndpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ file, language: lang })
+  });
+
+  const data = await response.json();
+  if (data.success) {
+    output.textContent = data.text;
+    const dlBtn = document.getElementById('downloadBtn');
+    dlBtn.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(data.text);
+    dlBtn.download = file.replace(/\.mp3$/, '.txt');
+    dlBtn.classList.remove('d-none');
+  } else {
+    output.textContent = '❌ Transcription failed: ' + (data.error || 'Unknown error');
+  }
+}
+
+document.getElementById('startBtn').addEventListener('click', startTranscription);
+document.addEventListener('DOMContentLoaded', fetchAudioFiles);
+</script>
+</body>
+</html>
