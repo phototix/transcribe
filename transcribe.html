@@ -75,7 +75,7 @@ async function startTranscription() {
 
   const data = await response.json();
   if (data.success) {
-    output.textContent = data.text;
+    output.textContent = '✅ Transcription complted.';
     const dlBtn = document.getElementById('downloadBtn');
     dlBtn.href = '/transcribe/transcribed/' + file.replace(/\.mp3$/, '.txt');
     dlBtn.download = file.replace(/\.mp3$/, '.txt');
