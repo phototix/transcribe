@@ -77,7 +77,7 @@ async function startTranscription() {
   if (data.success) {
     output.textContent = data.text;
     const dlBtn = document.getElementById('downloadBtn');
-    dlBtn.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(data.text);
+    dlBtn.href = '/transcribe/transcribed/' + file.replace(/\.mp3$/, '.txt');
     dlBtn.download = file.replace(/\.mp3$/, '.txt');
     dlBtn.classList.remove('d-none');
   } else {
