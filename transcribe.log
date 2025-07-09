@@ -1,0 +1,1754 @@
+[2025-07-08 06:56:22] Start transcription: File = Q2-Part-01.mp3, Language = en
+[2025-07-08 06:56:22] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-08 06:56:22] FFmpeg return code: 0
+[2025-07-08 06:56:22] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.mp3':
+  Duration: 00:05:02.45, start: 0.023021, bitrate: 175 kb/s
+  Stream #0:0: Audio: mp3, 48000 Hz, stereo, fltp, 175 kb/s
+    Metadata:
+      encoder         : LAME3.100
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7680kB time=00:04:09.79 bitrate= 251.9kbits/s speed= 500x    size=    9451kB time=00:05:02.42 bitrate= 256.0kbits/s speed= 502x
+video:0kB audio:9451kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000806%
+[2025-07-08 06:56:22] Converted WAV size: 9677646 bytes
+[2025-07-08 06:56:22] Sending chunk to OpenAI: converted.wav
+[2025-07-08 06:56:35] Chunk transcription succeeded
+[2025-07-08 06:56:35] Finished transcription. Output length: 3132
+[2025-07-08 07:01:21] Start transcription: File = kitboga-30mins.mp3, Language = en
+[2025-07-08 07:01:24] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-08 07:01:24] FFmpeg return code: 0
+[2025-07-08 07:01:24] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:30:45.52, start: 0.025057, bitrate: 125 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 125 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    8704kB time=00:04:44.26 bitrate= 250.8kbits/s speed= 569x    size=   18176kB time=00:09:46.24 bitrate= 254.0kbits/s speed= 586x    size=   27392kB time=00:14:43.40 bitrate= 254.0kbits/s speed= 589x    size=   37120kB time=00:19:51.68 bitrate= 255.2kbits/s speed= 596x    size=   46848kB time=00:24:59.14 bitrate= 256.0kbits/s speed= 600x    size=   56320kB time=00:30:07.72 bitrate= 255.2kbits/s speed= 603x    size=   57671kB time=00:30:45.47 bitrate= 256.0kbits/s speed= 602x
+video:0kB audio:57671kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000132%
+[2025-07-08 07:01:24] Converted WAV size: 59055296 bytes
+[2025-07-08 07:01:24] Processing chunk 0 from 0 sec
+[2025-07-08 07:01:24] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-08 07:01:29] Chunk transcription succeeded
+[2025-07-08 07:01:29] Processing chunk 1 from 60 sec
+[2025-07-08 07:01:29] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-08 07:01:34] Chunk transcription succeeded
+[2025-07-08 07:01:34] Processing chunk 2 from 120 sec
+[2025-07-08 07:01:34] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-08 07:01:38] Chunk transcription succeeded
+[2025-07-08 07:01:38] Processing chunk 3 from 180 sec
+[2025-07-08 07:01:38] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-08 07:01:42] Chunk transcription succeeded
+[2025-07-08 07:01:42] Processing chunk 4 from 240 sec
+[2025-07-08 07:01:42] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-08 07:01:52] Chunk transcription succeeded
+[2025-07-08 07:01:53] Processing chunk 5 from 300 sec
+[2025-07-08 07:01:53] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-08 07:01:56] Chunk transcription succeeded
+[2025-07-08 07:01:56] Processing chunk 6 from 360 sec
+[2025-07-08 07:01:56] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-08 07:02:00] Chunk transcription succeeded
+[2025-07-08 07:02:01] Processing chunk 7 from 420 sec
+[2025-07-08 07:02:01] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-08 07:02:04] Chunk transcription succeeded
+[2025-07-08 07:02:04] Processing chunk 8 from 480 sec
+[2025-07-08 07:02:04] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-08 07:02:09] Chunk transcription succeeded
+[2025-07-08 07:02:09] Processing chunk 9 from 540 sec
+[2025-07-08 07:02:09] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-08 07:02:12] Chunk transcription succeeded
+[2025-07-08 07:02:12] Processing chunk 10 from 600 sec
+[2025-07-08 07:02:12] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-08 07:02:17] Chunk transcription succeeded
+[2025-07-08 07:02:17] Processing chunk 11 from 660 sec
+[2025-07-08 07:02:17] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-08 07:02:21] Chunk transcription succeeded
+[2025-07-08 07:02:21] Processing chunk 12 from 720 sec
+[2025-07-08 07:02:21] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-08 07:02:25] Chunk transcription succeeded
+[2025-07-08 07:02:25] Processing chunk 13 from 780 sec
+[2025-07-08 07:02:25] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-08 07:02:32] Chunk transcription succeeded
+[2025-07-08 07:02:32] Processing chunk 14 from 840 sec
+[2025-07-08 07:02:32] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-08 07:02:37] Chunk transcription succeeded
+[2025-07-08 07:02:37] Processing chunk 15 from 900 sec
+[2025-07-08 07:02:37] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-08 07:02:41] Chunk transcription succeeded
+[2025-07-08 07:02:41] Processing chunk 16 from 960 sec
+[2025-07-08 07:02:41] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-08 07:02:50] Chunk transcription succeeded
+[2025-07-08 07:02:50] Processing chunk 17 from 1020 sec
+[2025-07-08 07:02:50] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-08 07:02:54] Chunk transcription succeeded
+[2025-07-08 07:02:54] Processing chunk 18 from 1080 sec
+[2025-07-08 07:02:54] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-08 07:02:58] Chunk transcription succeeded
+[2025-07-08 07:02:58] Processing chunk 19 from 1140 sec
+[2025-07-08 07:02:58] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-08 07:03:05] Chunk transcription succeeded
+[2025-07-08 07:03:05] Processing chunk 20 from 1200 sec
+[2025-07-08 07:03:05] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-08 07:03:14] Chunk transcription succeeded
+[2025-07-08 07:03:14] Processing chunk 21 from 1260 sec
+[2025-07-08 07:03:14] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-08 07:03:18] Chunk transcription succeeded
+[2025-07-08 07:03:18] Processing chunk 22 from 1320 sec
+[2025-07-08 07:03:18] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-08 07:03:22] Chunk transcription succeeded
+[2025-07-08 07:03:22] Processing chunk 23 from 1380 sec
+[2025-07-08 07:03:22] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-08 07:03:26] Chunk transcription succeeded
+[2025-07-08 07:03:26] Processing chunk 24 from 1440 sec
+[2025-07-08 07:03:26] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-08 07:03:30] Chunk transcription succeeded
+[2025-07-08 07:03:30] Processing chunk 25 from 1500 sec
+[2025-07-08 07:03:30] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-08 07:03:33] Chunk transcription succeeded
+[2025-07-08 07:03:33] Processing chunk 26 from 1560 sec
+[2025-07-08 07:03:33] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-08 07:03:37] Chunk transcription succeeded
+[2025-07-08 07:03:37] Processing chunk 27 from 1620 sec
+[2025-07-08 07:03:37] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-08 07:03:41] Chunk transcription succeeded
+[2025-07-08 07:03:41] Processing chunk 28 from 1680 sec
+[2025-07-08 07:03:41] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-08 07:03:46] Chunk transcription succeeded
+[2025-07-08 07:03:46] Processing chunk 29 from 1740 sec
+[2025-07-08 07:03:46] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-08 07:03:50] Chunk transcription succeeded
+[2025-07-08 07:03:51] Processing chunk 30 from 1800 sec
+[2025-07-08 07:03:51] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-08 07:03:54] Chunk transcription succeeded
+[2025-07-08 07:03:54] Finished transcription. Output length: 21713
+[2025-07-08 07:12:21] Start transcription: File = kitboga-30mins.mp3, Language = en
+[2025-07-08 07:12:25] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-08 07:12:25] FFmpeg return code: 0
+[2025-07-08 07:12:25] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:30:45.52, start: 0.025057, bitrate: 125 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 125 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    8704kB time=00:04:46.06 bitrate= 249.3kbits/s speed= 572x    size=   18432kB time=00:09:53.81 bitrate= 254.3kbits/s speed= 594x    size=   27904kB time=00:14:56.49 bitrate= 255.0kbits/s speed= 598x    size=   37376kB time=00:19:59.02 bitrate= 255.4kbits/s speed= 599x    size=   46848kB time=00:24:59.79 bitrate= 255.9kbits/s speed= 600x    size=   56320kB time=00:30:07.28 bitrate= 255.3kbits/s speed= 602x    size=   57671kB time=00:30:45.47 bitrate= 256.0kbits/s speed= 601x
+video:0kB audio:57671kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000132%
+[2025-07-08 07:12:25] Converted WAV size: 59055296 bytes
+[2025-07-08 07:12:25] Processing chunk 0 from 0 sec
+[2025-07-08 07:12:25] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-08 07:12:28] Chunk transcription succeeded
+[2025-07-08 07:12:28] Processing chunk 1 from 60 sec
+[2025-07-08 07:12:28] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-08 07:12:32] Chunk transcription succeeded
+[2025-07-08 07:12:32] Processing chunk 2 from 120 sec
+[2025-07-08 07:12:32] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-08 07:12:35] Chunk transcription succeeded
+[2025-07-08 07:12:35] Processing chunk 3 from 180 sec
+[2025-07-08 07:12:35] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-08 07:12:41] Chunk transcription succeeded
+[2025-07-08 07:12:41] Processing chunk 4 from 240 sec
+[2025-07-08 07:12:41] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-08 07:12:52] Chunk transcription succeeded
+[2025-07-08 07:12:52] Processing chunk 5 from 300 sec
+[2025-07-08 07:12:52] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-08 07:12:58] Chunk transcription succeeded
+[2025-07-08 07:12:58] Processing chunk 6 from 360 sec
+[2025-07-08 07:12:58] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-08 07:13:02] Chunk transcription succeeded
+[2025-07-08 07:13:02] Processing chunk 7 from 420 sec
+[2025-07-08 07:13:02] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-08 07:13:06] Chunk transcription succeeded
+[2025-07-08 07:13:06] Processing chunk 8 from 480 sec
+[2025-07-08 07:13:06] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-08 07:13:09] Chunk transcription succeeded
+[2025-07-08 07:13:09] Processing chunk 9 from 540 sec
+[2025-07-08 07:13:09] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-08 07:13:15] Chunk transcription succeeded
+[2025-07-08 07:13:15] Processing chunk 10 from 600 sec
+[2025-07-08 07:13:15] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-08 07:13:19] Chunk transcription succeeded
+[2025-07-08 07:13:19] Processing chunk 11 from 660 sec
+[2025-07-08 07:13:19] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-08 07:13:26] Chunk transcription succeeded
+[2025-07-08 07:13:26] Processing chunk 12 from 720 sec
+[2025-07-08 07:13:26] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-08 07:13:30] Chunk transcription succeeded
+[2025-07-08 07:13:30] Processing chunk 13 from 780 sec
+[2025-07-08 07:13:30] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-08 07:13:35] Chunk transcription succeeded
+[2025-07-08 07:13:35] Processing chunk 14 from 840 sec
+[2025-07-08 07:13:35] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-08 07:13:40] Chunk transcription succeeded
+[2025-07-08 07:13:40] Processing chunk 15 from 900 sec
+[2025-07-08 07:13:40] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-08 07:13:43] Chunk transcription succeeded
+[2025-07-08 07:13:43] Processing chunk 16 from 960 sec
+[2025-07-08 07:13:43] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-08 07:13:50] Chunk transcription succeeded
+[2025-07-08 07:13:50] Processing chunk 17 from 1020 sec
+[2025-07-08 07:13:50] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-08 07:13:54] Chunk transcription succeeded
+[2025-07-08 07:13:54] Processing chunk 18 from 1080 sec
+[2025-07-08 07:13:54] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-08 07:13:59] Chunk transcription succeeded
+[2025-07-08 07:13:59] Processing chunk 19 from 1140 sec
+[2025-07-08 07:13:59] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-08 07:14:03] Chunk transcription succeeded
+[2025-07-08 07:14:03] Processing chunk 20 from 1200 sec
+[2025-07-08 07:14:03] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-08 07:14:08] Chunk transcription succeeded
+[2025-07-08 07:14:08] Processing chunk 21 from 1260 sec
+[2025-07-08 07:14:08] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-08 07:14:11] Chunk transcription succeeded
+[2025-07-08 07:14:11] Processing chunk 22 from 1320 sec
+[2025-07-08 07:14:11] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-08 07:14:16] Chunk transcription succeeded
+[2025-07-08 07:14:16] Processing chunk 23 from 1380 sec
+[2025-07-08 07:14:16] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-08 07:14:19] Chunk transcription succeeded
+[2025-07-08 07:14:20] Processing chunk 24 from 1440 sec
+[2025-07-08 07:14:20] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-08 07:14:23] Chunk transcription succeeded
+[2025-07-08 07:14:23] Processing chunk 25 from 1500 sec
+[2025-07-08 07:14:23] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-08 07:14:26] Chunk transcription succeeded
+[2025-07-08 07:14:26] Processing chunk 26 from 1560 sec
+[2025-07-08 07:14:26] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-08 07:14:30] Chunk transcription succeeded
+[2025-07-08 07:14:30] Processing chunk 27 from 1620 sec
+[2025-07-08 07:14:30] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-08 07:14:35] Chunk transcription succeeded
+[2025-07-08 07:14:35] Processing chunk 28 from 1680 sec
+[2025-07-08 07:14:35] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-08 07:14:37] Chunk transcription succeeded
+[2025-07-08 07:14:37] Processing chunk 29 from 1740 sec
+[2025-07-08 07:14:37] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-08 07:14:42] Chunk transcription succeeded
+[2025-07-08 07:14:42] Processing chunk 30 from 1800 sec
+[2025-07-08 07:14:42] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-08 07:14:46] Chunk transcription succeeded
+[2025-07-08 07:14:46] Finished transcription. Output length: 21519
+[2025-07-08 07:14:46] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.txt
+[2025-07-08 07:14:46] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/kitboga-30mins.txt
+[2025-07-08 07:17:22] Start transcription: File = Q2-Part-01.mp3, Language = en
+[2025-07-08 07:17:23] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-08 07:17:23] FFmpeg return code: 0
+[2025-07-08 07:17:23] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.mp3':
+  Duration: 00:05:02.45, start: 0.023021, bitrate: 175 kb/s
+  Stream #0:0: Audio: mp3, 48000 Hz, stereo, fltp, 175 kb/s
+    Metadata:
+      encoder         : LAME3.100
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7680kB time=00:04:05.99 bitrate= 255.8kbits/s speed= 492x    size=    9451kB time=00:05:02.42 bitrate= 256.0kbits/s speed= 492x
+video:0kB audio:9451kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000806%
+[2025-07-08 07:17:23] Converted WAV size: 9677646 bytes
+[2025-07-08 07:17:23] Sending chunk to OpenAI: converted.wav
+[2025-07-08 07:17:34] Chunk transcription succeeded
+[2025-07-08 07:17:34] Finished transcription. Output length: 3132
+[2025-07-08 07:17:34] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.txt
+[2025-07-08 07:17:34] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/Q2-Part-01.txt
+[2025-07-08 07:20:19] Start transcription: File = wutuobang-01.mp3, Language = zh
+[2025-07-08 07:20:23] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-08 07:20:23] FFmpeg return code: 0
+[2025-07-08 07:20:23] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:32:15.07, start: 0.025057, bitrate: 207 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 207 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    size=    7168kB time=00:03:49.43 bitrate= 255.9kbits/s speed= 459x    size=   14848kB time=00:07:55.11 bitrate= 256.0kbits/s speed= 475x    size=   23040kB time=00:12:23.07 bitrate= 254.0kbits/s speed= 495x    size=   31744kB time=00:16:59.71 bitrate= 255.0kbits/s speed= 510x    size=   40192kB time=00:21:30.68 bitrate= 255.1kbits/s speed= 516x    size=   48896kB time=00:26:08.13 bitrate= 255.4kbits/s speed= 523x    size=   57600kB time=00:30:44.03 bitrate= 255.9kbits/s speed= 527x    size=   60470kB time=00:32:15.03 bitrate= 256.0kbits/s speed= 528x
+video:0kB audio:60470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000126%
+[2025-07-08 07:20:23] Converted WAV size: 61921196 bytes
+[2025-07-08 07:20:23] Processing chunk 0 from 0 sec
+[2025-07-08 07:20:23] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-08 07:20:31] Chunk transcription succeeded
+[2025-07-08 07:20:31] Processing chunk 1 from 60 sec
+[2025-07-08 07:20:31] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-08 07:20:44] Chunk transcription succeeded
+[2025-07-08 07:20:44] Processing chunk 2 from 120 sec
+[2025-07-08 07:20:44] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-08 07:20:49] Chunk transcription succeeded
+[2025-07-08 07:20:49] Processing chunk 3 from 180 sec
+[2025-07-08 07:20:49] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-08 07:20:53] Chunk transcription succeeded
+[2025-07-08 07:20:54] Processing chunk 4 from 240 sec
+[2025-07-08 07:20:54] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-08 07:20:58] Chunk transcription succeeded
+[2025-07-08 07:20:58] Processing chunk 5 from 300 sec
+[2025-07-08 07:20:58] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-08 07:21:04] Chunk transcription succeeded
+[2025-07-08 07:21:04] Processing chunk 6 from 360 sec
+[2025-07-08 07:21:04] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-08 07:21:11] Chunk transcription succeeded
+[2025-07-08 07:21:11] Processing chunk 7 from 420 sec
+[2025-07-08 07:21:11] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-08 07:21:15] Chunk transcription succeeded
+[2025-07-08 07:21:15] Processing chunk 8 from 480 sec
+[2025-07-08 07:21:15] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-08 07:21:19] Chunk transcription succeeded
+[2025-07-08 07:21:19] Processing chunk 9 from 540 sec
+[2025-07-08 07:21:19] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-08 07:21:24] Chunk transcription succeeded
+[2025-07-08 07:21:24] Processing chunk 10 from 600 sec
+[2025-07-08 07:21:24] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-08 07:21:30] Chunk transcription succeeded
+[2025-07-08 07:21:30] Processing chunk 11 from 660 sec
+[2025-07-08 07:21:30] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-08 07:21:35] Chunk transcription succeeded
+[2025-07-08 07:21:36] Processing chunk 12 from 720 sec
+[2025-07-08 07:21:36] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-08 07:21:41] Chunk transcription succeeded
+[2025-07-08 07:21:41] Processing chunk 13 from 780 sec
+[2025-07-08 07:21:41] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-08 07:21:47] Chunk transcription succeeded
+[2025-07-08 07:21:47] Processing chunk 14 from 840 sec
+[2025-07-08 07:21:47] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-08 07:21:53] Chunk transcription succeeded
+[2025-07-08 07:21:53] Processing chunk 15 from 900 sec
+[2025-07-08 07:21:53] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-08 07:21:58] Chunk transcription succeeded
+[2025-07-08 07:21:58] Processing chunk 16 from 960 sec
+[2025-07-08 07:21:58] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-08 07:22:02] Chunk transcription succeeded
+[2025-07-08 07:22:02] Processing chunk 17 from 1020 sec
+[2025-07-08 07:22:02] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-08 07:22:07] Chunk transcription succeeded
+[2025-07-08 07:22:08] Processing chunk 18 from 1080 sec
+[2025-07-08 07:22:08] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-08 07:22:12] Chunk transcription succeeded
+[2025-07-08 07:22:12] Processing chunk 19 from 1140 sec
+[2025-07-08 07:22:12] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-08 07:22:17] Chunk transcription succeeded
+[2025-07-08 07:22:17] Processing chunk 20 from 1200 sec
+[2025-07-08 07:22:17] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-08 07:22:22] Chunk transcription succeeded
+[2025-07-08 07:22:22] Processing chunk 21 from 1260 sec
+[2025-07-08 07:22:22] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-08 07:22:26] Chunk transcription succeeded
+[2025-07-08 07:22:26] Processing chunk 22 from 1320 sec
+[2025-07-08 07:22:26] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-08 07:22:31] Chunk transcription succeeded
+[2025-07-08 07:22:31] Processing chunk 23 from 1380 sec
+[2025-07-08 07:22:31] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-08 07:22:37] Chunk transcription succeeded
+[2025-07-08 07:22:37] Processing chunk 24 from 1440 sec
+[2025-07-08 07:22:37] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-08 07:22:42] Chunk transcription succeeded
+[2025-07-08 07:22:42] Processing chunk 25 from 1500 sec
+[2025-07-08 07:22:42] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-08 07:22:51] Chunk transcription succeeded
+[2025-07-08 07:22:51] Processing chunk 26 from 1560 sec
+[2025-07-08 07:22:51] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-08 07:22:56] Chunk transcription succeeded
+[2025-07-08 07:22:56] Processing chunk 27 from 1620 sec
+[2025-07-08 07:22:56] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-08 07:23:02] Chunk transcription succeeded
+[2025-07-08 07:23:02] Processing chunk 28 from 1680 sec
+[2025-07-08 07:23:02] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-08 07:23:06] Chunk transcription succeeded
+[2025-07-08 07:23:07] Processing chunk 29 from 1740 sec
+[2025-07-08 07:23:07] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-08 07:23:14] Chunk transcription succeeded
+[2025-07-08 07:23:14] Processing chunk 30 from 1800 sec
+[2025-07-08 07:23:14] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-08 07:23:19] Chunk transcription succeeded
+[2025-07-08 07:23:20] Processing chunk 31 from 1860 sec
+[2025-07-08 07:23:20] Sending chunk to OpenAI: chunk_31.wav
+[2025-07-08 07:23:26] Chunk transcription succeeded
+[2025-07-08 07:23:26] Processing chunk 32 from 1920 sec
+[2025-07-08 07:23:26] Sending chunk to OpenAI: chunk_32.wav
+[2025-07-08 07:23:28] Chunk transcription succeeded
+[2025-07-08 07:23:28] Finished transcription. Output length: 27971
+[2025-07-08 07:23:28] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.txt
+[2025-07-08 07:23:28] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/wutuobang-01.txt
+[2025-07-08 07:23:51] Start transcription: File = wutuobang-01.mp3, Language = en
+[2025-07-08 07:23:55] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-08 07:23:55] FFmpeg return code: 0
+[2025-07-08 07:23:55] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:32:15.07, start: 0.025057, bitrate: 207 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 207 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7680kB time=00:04:08.47 bitrate= 253.2kbits/s speed= 497x    size=   16128kB time=00:08:40.09 bitrate= 254.0kbits/s speed= 520x    size=   24576kB time=00:13:09.36 bitrate= 255.0kbits/s speed= 526x    size=   33024kB time=00:17:41.35 bitrate= 254.9kbits/s speed= 531x    size=   41472kB time=00:22:10.36 bitrate= 255.4kbits/s speed= 532x    size=   49920kB time=00:26:39.16 bitrate= 255.7kbits/s speed= 533x    size=   58112kB time=00:31:06.08 bitrate= 255.1kbits/s speed= 533x    size=   60470kB time=00:32:15.03 bitrate= 256.0kbits/s speed= 533x
+video:0kB audio:60470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000126%
+[2025-07-08 07:23:55] Converted WAV size: 61921196 bytes
+[2025-07-08 07:23:55] Processing chunk 0 from 0 sec
+[2025-07-08 07:23:55] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-08 07:24:03] Chunk transcription succeeded
+[2025-07-08 07:24:03] Processing chunk 1 from 60 sec
+[2025-07-08 07:24:03] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-08 07:24:15] Chunk transcription succeeded
+[2025-07-08 07:24:15] Processing chunk 2 from 120 sec
+[2025-07-08 07:24:15] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-08 07:24:20] Chunk transcription succeeded
+[2025-07-08 07:24:20] Processing chunk 3 from 180 sec
+[2025-07-08 07:24:20] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-08 07:24:24] Chunk transcription succeeded
+[2025-07-08 07:24:24] Processing chunk 4 from 240 sec
+[2025-07-08 07:24:24] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-08 07:24:31] Chunk transcription succeeded
+[2025-07-08 07:24:31] Processing chunk 5 from 300 sec
+[2025-07-08 07:24:31] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-08 07:24:36] Chunk transcription succeeded
+[2025-07-08 07:24:37] Processing chunk 6 from 360 sec
+[2025-07-08 07:24:37] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-08 07:24:42] Chunk transcription succeeded
+[2025-07-08 07:24:42] Processing chunk 7 from 420 sec
+[2025-07-08 07:24:42] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-08 07:24:52] Chunk transcription succeeded
+[2025-07-08 07:24:52] Processing chunk 8 from 480 sec
+[2025-07-08 07:24:52] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-08 07:24:57] Chunk transcription succeeded
+[2025-07-08 07:24:57] Processing chunk 9 from 540 sec
+[2025-07-08 07:24:57] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-08 07:25:01] Chunk transcription succeeded
+[2025-07-08 07:25:01] Processing chunk 10 from 600 sec
+[2025-07-08 07:25:01] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-08 07:25:08] Chunk transcription succeeded
+[2025-07-08 07:25:08] Processing chunk 11 from 660 sec
+[2025-07-08 07:25:08] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-08 07:25:13] Chunk transcription succeeded
+[2025-07-08 07:25:13] Processing chunk 12 from 720 sec
+[2025-07-08 07:25:13] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-08 07:25:18] Chunk transcription succeeded
+[2025-07-08 07:25:18] Processing chunk 13 from 780 sec
+[2025-07-08 07:25:18] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-08 07:25:22] Chunk transcription succeeded
+[2025-07-08 07:25:22] Processing chunk 14 from 840 sec
+[2025-07-08 07:25:22] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-08 07:25:25] Chunk transcription succeeded
+[2025-07-08 07:25:25] Processing chunk 15 from 900 sec
+[2025-07-08 07:25:25] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-08 07:25:31] Chunk transcription succeeded
+[2025-07-08 07:25:31] Processing chunk 16 from 960 sec
+[2025-07-08 07:25:31] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-08 07:25:35] Chunk transcription succeeded
+[2025-07-08 07:25:35] Processing chunk 17 from 1020 sec
+[2025-07-08 07:25:35] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-08 07:25:39] Chunk transcription succeeded
+[2025-07-08 07:25:39] Processing chunk 18 from 1080 sec
+[2025-07-08 07:25:39] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-08 07:25:48] Chunk transcription succeeded
+[2025-07-08 07:25:48] Processing chunk 19 from 1140 sec
+[2025-07-08 07:25:48] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-08 07:25:52] Chunk transcription succeeded
+[2025-07-08 07:25:52] Processing chunk 20 from 1200 sec
+[2025-07-08 07:25:52] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-08 07:25:57] Chunk transcription succeeded
+[2025-07-08 07:25:57] Processing chunk 21 from 1260 sec
+[2025-07-08 07:25:57] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-08 07:26:11] Chunk transcription succeeded
+[2025-07-08 07:26:11] Processing chunk 22 from 1320 sec
+[2025-07-08 07:26:11] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-08 07:26:15] Chunk transcription succeeded
+[2025-07-08 07:26:15] Processing chunk 23 from 1380 sec
+[2025-07-08 07:26:15] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-08 07:26:19] Chunk transcription succeeded
+[2025-07-08 07:26:19] Processing chunk 24 from 1440 sec
+[2025-07-08 07:26:19] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-08 07:26:26] Chunk transcription succeeded
+[2025-07-08 07:26:26] Processing chunk 25 from 1500 sec
+[2025-07-08 07:26:26] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-08 07:26:33] Chunk transcription succeeded
+[2025-07-08 07:26:33] Processing chunk 26 from 1560 sec
+[2025-07-08 07:26:33] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-08 07:26:47] Chunk transcription succeeded
+[2025-07-08 07:26:47] Processing chunk 27 from 1620 sec
+[2025-07-08 07:26:47] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-08 07:26:51] Chunk transcription succeeded
+[2025-07-08 07:26:51] Processing chunk 28 from 1680 sec
+[2025-07-08 07:26:51] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-08 07:26:56] Chunk transcription succeeded
+[2025-07-08 07:26:56] Processing chunk 29 from 1740 sec
+[2025-07-08 07:26:56] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-08 07:27:03] Chunk transcription succeeded
+[2025-07-08 07:27:03] Processing chunk 30 from 1800 sec
+[2025-07-08 07:27:03] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-08 07:27:12] Chunk transcription succeeded
+[2025-07-08 07:27:13] Processing chunk 31 from 1860 sec
+[2025-07-08 07:27:13] Sending chunk to OpenAI: chunk_31.wav
+[2025-07-08 07:27:17] Chunk transcription succeeded
+[2025-07-08 07:27:17] Processing chunk 32 from 1920 sec
+[2025-07-08 07:27:17] Sending chunk to OpenAI: chunk_32.wav
+[2025-07-08 07:27:18] Chunk transcription succeeded
+[2025-07-08 07:27:18] Finished transcription. Output length: 36810
+[2025-07-08 07:27:18] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.txt
+[2025-07-08 07:27:18] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/wutuobang-01.txt
+[2025-07-08 08:25:00] Start transcription: File = wutuobang-01.mp3, Language = zh
+[2025-07-08 08:25:04] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-08 08:25:04] FFmpeg return code: 0
+[2025-07-08 08:25:04] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:32:15.07, start: 0.025057, bitrate: 207 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 207 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7168kB time=00:03:52.59 bitrate= 252.5kbits/s speed= 465x    size=   14336kB time=00:07:44.61 bitrate= 252.8kbits/s speed= 465x    size=   21760kB time=00:11:37.15 bitrate= 255.7kbits/s speed= 465x    size=   29184kB time=00:15:41.21 bitrate= 254.0kbits/s speed= 471x    size=   37376kB time=00:19:57.50 bitrate= 255.7kbits/s speed= 479x    size=   44288kB time=00:23:44.22 bitrate= 254.7kbits/s speed= 475x    size=   52224kB time=00:27:51.75 bitrate= 255.9kbits/s speed= 478x    size=   60160kB time=00:32:08.75 bitrate= 255.5kbits/s speed= 482x    size=   60470kB time=00:32:15.03 bitrate= 256.0kbits/s speed= 482x
+video:0kB audio:60470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000126%
+[2025-07-08 08:25:04] Converted WAV size: 61921196 bytes
+[2025-07-08 08:25:04] Processing chunk 0 from 0 sec
+[2025-07-08 08:25:04] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-08 08:25:11] Chunk transcription succeeded
+[2025-07-08 08:25:11] Processing chunk 1 from 60 sec
+[2025-07-08 08:25:11] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-08 08:25:26] Chunk transcription succeeded
+[2025-07-08 08:25:26] Processing chunk 2 from 120 sec
+[2025-07-08 08:25:26] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-08 08:25:34] Chunk transcription succeeded
+[2025-07-08 08:25:34] Processing chunk 3 from 180 sec
+[2025-07-08 08:25:34] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-08 08:25:40] Chunk transcription succeeded
+[2025-07-08 08:25:41] Processing chunk 4 from 240 sec
+[2025-07-08 08:25:41] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-08 08:25:47] Chunk transcription succeeded
+[2025-07-08 08:25:47] Processing chunk 5 from 300 sec
+[2025-07-08 08:25:47] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-08 08:25:53] Chunk transcription succeeded
+[2025-07-08 08:25:54] Processing chunk 6 from 360 sec
+[2025-07-08 08:25:54] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-08 08:25:57] Chunk transcription succeeded
+[2025-07-08 08:25:58] Processing chunk 7 from 420 sec
+[2025-07-08 08:25:58] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-08 08:26:04] Chunk transcription succeeded
+[2025-07-08 08:26:04] Processing chunk 8 from 480 sec
+[2025-07-08 08:26:04] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-08 08:26:08] Chunk transcription succeeded
+[2025-07-08 08:26:08] Processing chunk 9 from 540 sec
+[2025-07-08 08:26:08] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-08 08:26:14] Chunk transcription succeeded
+[2025-07-08 08:26:14] Processing chunk 10 from 600 sec
+[2025-07-08 08:26:14] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-08 08:26:26] Chunk transcription succeeded
+[2025-07-08 08:26:26] Processing chunk 11 from 660 sec
+[2025-07-08 08:26:26] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-08 08:26:32] Chunk transcription succeeded
+[2025-07-08 08:26:32] Processing chunk 12 from 720 sec
+[2025-07-08 08:26:32] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-08 08:26:36] Chunk transcription succeeded
+[2025-07-08 08:26:36] Processing chunk 13 from 780 sec
+[2025-07-08 08:26:36] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-08 08:26:44] Chunk transcription succeeded
+[2025-07-08 08:26:44] Processing chunk 14 from 840 sec
+[2025-07-08 08:26:44] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-08 08:26:49] Chunk transcription succeeded
+[2025-07-08 08:26:49] Processing chunk 15 from 900 sec
+[2025-07-08 08:26:49] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-08 08:27:04] Chunk transcription succeeded
+[2025-07-08 08:27:04] Processing chunk 16 from 960 sec
+[2025-07-08 08:27:04] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-08 08:27:09] Chunk transcription succeeded
+[2025-07-08 08:27:09] Processing chunk 17 from 1020 sec
+[2025-07-08 08:27:09] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-08 08:27:15] Chunk transcription succeeded
+[2025-07-08 08:27:15] Processing chunk 18 from 1080 sec
+[2025-07-08 08:27:15] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-08 08:27:20] Chunk transcription succeeded
+[2025-07-08 08:27:20] Processing chunk 19 from 1140 sec
+[2025-07-08 08:27:20] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-08 08:27:25] Chunk transcription succeeded
+[2025-07-08 08:27:25] Processing chunk 20 from 1200 sec
+[2025-07-08 08:27:25] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-08 08:27:32] Chunk transcription succeeded
+[2025-07-08 08:27:32] Processing chunk 21 from 1260 sec
+[2025-07-08 08:27:32] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-08 08:27:38] Chunk transcription succeeded
+[2025-07-08 08:27:38] Processing chunk 22 from 1320 sec
+[2025-07-08 08:27:38] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-08 08:27:44] Chunk transcription succeeded
+[2025-07-08 08:27:44] Processing chunk 23 from 1380 sec
+[2025-07-08 08:27:44] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-08 08:27:50] Chunk transcription succeeded
+[2025-07-08 08:27:50] Processing chunk 24 from 1440 sec
+[2025-07-08 08:27:50] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-08 08:27:57] Chunk transcription succeeded
+[2025-07-08 08:27:57] Processing chunk 25 from 1500 sec
+[2025-07-08 08:27:57] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-08 08:28:05] Chunk transcription succeeded
+[2025-07-08 08:28:05] Processing chunk 26 from 1560 sec
+[2025-07-08 08:28:05] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-08 08:28:10] Chunk transcription succeeded
+[2025-07-08 08:28:10] Processing chunk 27 from 1620 sec
+[2025-07-08 08:28:10] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-08 08:28:16] Chunk transcription succeeded
+[2025-07-08 08:28:16] Processing chunk 28 from 1680 sec
+[2025-07-08 08:28:16] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-08 08:28:21] Chunk transcription succeeded
+[2025-07-08 08:28:21] Processing chunk 29 from 1740 sec
+[2025-07-08 08:28:21] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-08 08:28:32] Chunk transcription succeeded
+[2025-07-08 08:28:32] Processing chunk 30 from 1800 sec
+[2025-07-08 08:28:32] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-08 08:28:38] Chunk transcription succeeded
+[2025-07-08 08:28:38] Processing chunk 31 from 1860 sec
+[2025-07-08 08:28:38] Sending chunk to OpenAI: chunk_31.wav
+[2025-07-08 08:28:42] Chunk transcription succeeded
+[2025-07-08 08:28:42] Processing chunk 32 from 1920 sec
+[2025-07-08 08:28:42] Sending chunk to OpenAI: chunk_32.wav
+[2025-07-08 08:28:45] Chunk transcription succeeded
+[2025-07-08 08:28:45] Finished transcription. Output length: 27911
+[2025-07-08 08:28:45] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.txt
+[2025-07-08 08:28:45] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/wutuobang-01.txt
+[2025-07-09 14:39:39] Start transcription: File = Q2-Part-01.mp3, Language = en
+[2025-07-09 14:39:40] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 14:39:40] FFmpeg return code: 0
+[2025-07-09 14:39:40] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.mp3':
+  Duration: 00:05:02.45, start: 0.023021, bitrate: 175 kb/s
+  Stream #0:0: Audio: mp3, 48000 Hz, stereo, fltp, 175 kb/s
+    Metadata:
+      encoder         : LAME3.100
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7168kB time=00:03:50.01 bitrate= 255.3kbits/s speed= 460x    size=    9451kB time=00:05:02.42 bitrate= 256.0kbits/s speed= 465x
+video:0kB audio:9451kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000806%
+[2025-07-09 14:39:40] Converted WAV size: 9677646 bytes
+[2025-07-09 14:39:40] Sending chunk to OpenAI: converted.wav
+[2025-07-09 14:39:54] Chunk transcription succeeded
+[2025-07-09 14:39:54] Finished transcription. Output length: 3132
+[2025-07-09 14:39:54] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/Q2-Part-01.txt
+[2025-07-09 14:39:54] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/Q2-Part-01.txt
+[2025-07-09 14:40:07] Start transcription: File = kitboga-30mins.mp3, Language = en
+[2025-07-09 14:40:10] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 14:40:10] FFmpeg return code: 0
+[2025-07-09 14:40:10] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:30:45.52, start: 0.025057, bitrate: 125 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 125 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    6912kB time=00:03:48.07 bitrate= 248.3kbits/s speed= 456x    size=   16128kB time=00:08:42.99 bitrate= 252.6kbits/s speed= 523x    size=   24320kB time=00:13:03.72 bitrate= 254.2kbits/s speed= 522x    size=   33792kB time=00:18:04.31 bitrate= 255.3kbits/s speed= 542x    size=   42752kB time=00:22:48.34 bitrate= 255.9kbits/s speed= 547x    size=   51200kB time=00:27:25.45 bitrate= 254.9kbits/s speed= 548x    size=   57671kB time=00:30:45.47 bitrate= 256.0kbits/s speed= 550x
+video:0kB audio:57671kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000132%
+[2025-07-09 14:40:10] Converted WAV size: 59055296 bytes
+[2025-07-09 14:40:11] Processing chunk 0 from 0 sec
+[2025-07-09 14:40:11] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-09 14:40:16] Chunk transcription succeeded
+[2025-07-09 14:40:16] Processing chunk 1 from 60 sec
+[2025-07-09 14:40:16] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-09 14:40:23] Chunk transcription succeeded
+[2025-07-09 14:40:23] Processing chunk 2 from 120 sec
+[2025-07-09 14:40:23] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-09 14:40:27] Chunk transcription succeeded
+[2025-07-09 14:40:27] Processing chunk 3 from 180 sec
+[2025-07-09 14:40:27] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-09 14:40:34] Chunk transcription succeeded
+[2025-07-09 14:40:34] Processing chunk 4 from 240 sec
+[2025-07-09 14:40:34] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-09 14:40:46] Chunk transcription succeeded
+[2025-07-09 14:40:46] Processing chunk 5 from 300 sec
+[2025-07-09 14:40:46] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-09 14:40:51] Chunk transcription succeeded
+[2025-07-09 14:40:51] Processing chunk 6 from 360 sec
+[2025-07-09 14:40:51] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-09 14:40:58] Chunk transcription succeeded
+[2025-07-09 14:40:58] Processing chunk 7 from 420 sec
+[2025-07-09 14:40:58] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-09 14:41:09] Chunk transcription succeeded
+[2025-07-09 14:41:09] Processing chunk 8 from 480 sec
+[2025-07-09 14:41:09] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-09 14:41:15] Chunk transcription succeeded
+[2025-07-09 14:41:15] Processing chunk 9 from 540 sec
+[2025-07-09 14:41:15] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-09 14:41:19] Chunk transcription succeeded
+[2025-07-09 14:41:19] Processing chunk 10 from 600 sec
+[2025-07-09 14:41:19] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-09 14:41:24] Chunk transcription succeeded
+[2025-07-09 14:41:24] Processing chunk 11 from 660 sec
+[2025-07-09 14:41:24] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-09 14:41:29] Chunk transcription succeeded
+[2025-07-09 14:41:29] Processing chunk 12 from 720 sec
+[2025-07-09 14:41:29] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-09 14:41:35] Chunk transcription succeeded
+[2025-07-09 14:41:35] Processing chunk 13 from 780 sec
+[2025-07-09 14:41:35] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-09 14:41:40] Chunk transcription succeeded
+[2025-07-09 14:41:40] Processing chunk 14 from 840 sec
+[2025-07-09 14:41:40] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-09 14:41:44] Chunk transcription succeeded
+[2025-07-09 14:41:44] Processing chunk 15 from 900 sec
+[2025-07-09 14:41:44] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-09 14:41:49] Chunk transcription succeeded
+[2025-07-09 14:41:49] Processing chunk 16 from 960 sec
+[2025-07-09 14:41:49] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-09 14:42:01] Chunk transcription succeeded
+[2025-07-09 14:42:01] Processing chunk 17 from 1020 sec
+[2025-07-09 14:42:01] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-09 14:42:07] Chunk transcription succeeded
+[2025-07-09 14:42:07] Processing chunk 18 from 1080 sec
+[2025-07-09 14:42:07] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-09 14:42:12] Chunk transcription succeeded
+[2025-07-09 14:42:12] Processing chunk 19 from 1140 sec
+[2025-07-09 14:42:12] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-09 14:42:16] Chunk transcription succeeded
+[2025-07-09 14:42:16] Processing chunk 20 from 1200 sec
+[2025-07-09 14:42:16] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-09 14:42:25] Chunk transcription succeeded
+[2025-07-09 14:42:25] Processing chunk 21 from 1260 sec
+[2025-07-09 14:42:25] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-09 14:42:30] Chunk transcription succeeded
+[2025-07-09 14:42:30] Processing chunk 22 from 1320 sec
+[2025-07-09 14:42:30] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-09 14:42:35] Chunk transcription succeeded
+[2025-07-09 14:42:35] Processing chunk 23 from 1380 sec
+[2025-07-09 14:42:35] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-09 14:42:40] Chunk transcription succeeded
+[2025-07-09 14:42:40] Processing chunk 24 from 1440 sec
+[2025-07-09 14:42:40] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-09 14:42:45] Chunk transcription succeeded
+[2025-07-09 14:42:45] Processing chunk 25 from 1500 sec
+[2025-07-09 14:42:45] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-09 14:42:50] Chunk transcription succeeded
+[2025-07-09 14:42:50] Processing chunk 26 from 1560 sec
+[2025-07-09 14:42:50] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-09 14:42:54] Chunk transcription succeeded
+[2025-07-09 14:42:54] Processing chunk 27 from 1620 sec
+[2025-07-09 14:42:54] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-09 14:42:58] Chunk transcription succeeded
+[2025-07-09 14:42:58] Processing chunk 28 from 1680 sec
+[2025-07-09 14:42:58] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-09 14:43:03] Chunk transcription succeeded
+[2025-07-09 14:43:03] Processing chunk 29 from 1740 sec
+[2025-07-09 14:43:03] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-09 14:43:07] Chunk transcription succeeded
+[2025-07-09 14:43:07] Processing chunk 30 from 1800 sec
+[2025-07-09 14:43:07] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-09 14:43:10] Chunk transcription succeeded
+[2025-07-09 14:43:10] Finished transcription. Output length: 22074
+[2025-07-09 14:43:10] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.txt
+[2025-07-09 14:43:10] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/kitboga-30mins.txt
+[2025-07-09 14:45:30] Start transcription: File = kitboga-30mins.mp3, Language = en
+[2025-07-09 14:45:33] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 14:45:33] FFmpeg return code: 0
+[2025-07-09 14:45:33] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:30:45.52, start: 0.025057, bitrate: 125 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 125 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    size=    8192kB time=00:04:27.93 bitrate= 250.5kbits/s speed= 536x    size=   17920kB time=00:09:35.76 bitrate= 255.0kbits/s speed= 576x    size=   27392kB time=00:14:41.11 bitrate= 254.7kbits/s speed= 587x    size=   36864kB time=00:19:46.03 bitrate= 254.6kbits/s speed= 593x    size=   46336kB time=00:24:43.99 bitrate= 255.8kbits/s speed= 594x    size=   55808kB time=00:29:52.00 bitrate= 255.1kbits/s speed= 597x    size=   57671kB time=00:30:45.47 bitrate= 256.0kbits/s speed= 596x
+video:0kB audio:57671kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000132%
+[2025-07-09 14:45:33] Converted WAV size: 59055296 bytes
+[2025-07-09 14:45:33] Processing chunk 0 from 0 sec
+[2025-07-09 14:45:33] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-09 14:45:35] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:35] Processing chunk 1 from 60 sec
+[2025-07-09 14:45:35] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-09 14:45:37] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:37] Processing chunk 2 from 120 sec
+[2025-07-09 14:45:37] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-09 14:45:39] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:39] Processing chunk 3 from 180 sec
+[2025-07-09 14:45:39] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-09 14:45:41] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:41] Processing chunk 4 from 240 sec
+[2025-07-09 14:45:41] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-09 14:45:42] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:42] Processing chunk 5 from 300 sec
+[2025-07-09 14:45:42] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-09 14:45:43] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:43] Processing chunk 6 from 360 sec
+[2025-07-09 14:45:43] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-09 14:45:45] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:45] Processing chunk 7 from 420 sec
+[2025-07-09 14:45:45] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-09 14:45:45] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:45] Processing chunk 8 from 480 sec
+[2025-07-09 14:45:45] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-09 14:45:48] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:48] Processing chunk 9 from 540 sec
+[2025-07-09 14:45:48] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-09 14:45:50] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:50] Processing chunk 10 from 600 sec
+[2025-07-09 14:45:50] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-09 14:45:51] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:51] Processing chunk 11 from 660 sec
+[2025-07-09 14:45:51] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-09 14:45:52] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:52] Processing chunk 12 from 720 sec
+[2025-07-09 14:45:52] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-09 14:45:54] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:54] Processing chunk 13 from 780 sec
+[2025-07-09 14:45:54] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-09 14:45:56] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:56] Processing chunk 14 from 840 sec
+[2025-07-09 14:45:56] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-09 14:45:58] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:45:58] Processing chunk 15 from 900 sec
+[2025-07-09 14:45:58] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-09 14:46:02] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:02] Processing chunk 16 from 960 sec
+[2025-07-09 14:46:02] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-09 14:46:03] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:03] Processing chunk 17 from 1020 sec
+[2025-07-09 14:46:03] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-09 14:46:04] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:05] Processing chunk 18 from 1080 sec
+[2025-07-09 14:46:05] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-09 14:46:07] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:07] Processing chunk 19 from 1140 sec
+[2025-07-09 14:46:07] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-09 14:46:08] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:08] Processing chunk 20 from 1200 sec
+[2025-07-09 14:46:08] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-09 14:46:11] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:11] Processing chunk 21 from 1260 sec
+[2025-07-09 14:46:11] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-09 14:46:12] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:12] Processing chunk 22 from 1320 sec
+[2025-07-09 14:46:12] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-09 14:46:16] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:16] Processing chunk 23 from 1380 sec
+[2025-07-09 14:46:16] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-09 14:46:17] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:18] Processing chunk 24 from 1440 sec
+[2025-07-09 14:46:18] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-09 14:46:19] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:19] Processing chunk 25 from 1500 sec
+[2025-07-09 14:46:19] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-09 14:46:21] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:21] Processing chunk 26 from 1560 sec
+[2025-07-09 14:46:21] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-09 14:46:22] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:22] Processing chunk 27 from 1620 sec
+[2025-07-09 14:46:22] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-09 14:46:23] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:23] Processing chunk 28 from 1680 sec
+[2025-07-09 14:46:23] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-09 14:46:24] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:25] Processing chunk 29 from 1740 sec
+[2025-07-09 14:46:25] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-09 14:46:26] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:26] Processing chunk 30 from 1800 sec
+[2025-07-09 14:46:26] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-09 14:46:27] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:27] Finished transcription. Output length: 465
+[2025-07-09 14:46:27] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.txt
+[2025-07-09 14:46:27] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/kitboga-30mins.txt
+[2025-07-09 14:46:49] Start transcription: File = wutuobang-01.mp3, Language = en
+[2025-07-09 14:46:53] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 14:46:53] FFmpeg return code: 0
+[2025-07-09 14:46:53] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:32:15.07, start: 0.025057, bitrate: 207 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 207 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7936kB time=00:04:18.82 bitrate= 251.2kbits/s speed= 518x    size=   16128kB time=00:08:36.10 bitrate= 256.0kbits/s speed= 516x    size=   23552kB time=00:12:37.81 bitrate= 254.6kbits/s speed= 505x    size=   31232kB time=00:16:42.97 bitrate= 255.1kbits/s speed= 501x    size=   39680kB time=00:21:15.53 bitrate= 254.8kbits/s speed= 510x    size=   48128kB time=00:25:47.25 bitrate= 254.8kbits/s speed= 516x    size=   56576kB time=00:30:17.05 bitrate= 255.1kbits/s speed= 519x    size=   60470kB time=00:32:15.03 bitrate= 256.0kbits/s speed= 520x
+video:0kB audio:60470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000126%
+[2025-07-09 14:46:53] Converted WAV size: 61921196 bytes
+[2025-07-09 14:46:53] Processing chunk 0 from 0 sec
+[2025-07-09 14:46:53] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-09 14:46:54] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:54] Processing chunk 1 from 60 sec
+[2025-07-09 14:46:54] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-09 14:46:57] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:57] Processing chunk 2 from 120 sec
+[2025-07-09 14:46:57] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-09 14:46:59] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:46:59] Processing chunk 3 from 180 sec
+[2025-07-09 14:46:59] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-09 14:46:59] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:00] Processing chunk 4 from 240 sec
+[2025-07-09 14:47:00] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-09 14:47:01] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:01] Processing chunk 5 from 300 sec
+[2025-07-09 14:47:01] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-09 14:47:07] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:07] Processing chunk 6 from 360 sec
+[2025-07-09 14:47:07] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-09 14:47:07] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:07] Processing chunk 7 from 420 sec
+[2025-07-09 14:47:07] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-09 14:47:08] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:08] Processing chunk 8 from 480 sec
+[2025-07-09 14:47:08] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-09 14:47:27] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:27] Processing chunk 9 from 540 sec
+[2025-07-09 14:47:27] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-09 14:47:28] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:28] Processing chunk 10 from 600 sec
+[2025-07-09 14:47:28] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-09 14:47:29] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:29] Processing chunk 11 from 660 sec
+[2025-07-09 14:47:29] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-09 14:47:29] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:29] Processing chunk 12 from 720 sec
+[2025-07-09 14:47:29] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-09 14:47:31] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:31] Processing chunk 13 from 780 sec
+[2025-07-09 14:47:31] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-09 14:47:32] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:32] Processing chunk 14 from 840 sec
+[2025-07-09 14:47:32] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-09 14:47:33] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:33] Processing chunk 15 from 900 sec
+[2025-07-09 14:47:33] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-09 14:47:34] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:34] Processing chunk 16 from 960 sec
+[2025-07-09 14:47:34] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-09 14:47:36] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:36] Processing chunk 17 from 1020 sec
+[2025-07-09 14:47:36] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-09 14:47:39] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:39] Processing chunk 18 from 1080 sec
+[2025-07-09 14:47:39] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-09 14:47:40] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:40] Processing chunk 19 from 1140 sec
+[2025-07-09 14:47:40] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-09 14:47:42] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:42] Processing chunk 20 from 1200 sec
+[2025-07-09 14:47:42] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-09 14:47:42] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:42] Processing chunk 21 from 1260 sec
+[2025-07-09 14:47:42] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-09 14:47:44] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:44] Processing chunk 22 from 1320 sec
+[2025-07-09 14:47:44] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-09 14:47:45] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:45] Processing chunk 23 from 1380 sec
+[2025-07-09 14:47:45] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-09 14:47:45] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:46] Processing chunk 24 from 1440 sec
+[2025-07-09 14:47:46] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-09 14:47:46] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:46] Processing chunk 25 from 1500 sec
+[2025-07-09 14:47:46] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-09 14:47:47] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:47] Processing chunk 26 from 1560 sec
+[2025-07-09 14:47:47] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-09 14:47:48] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:48] Processing chunk 27 from 1620 sec
+[2025-07-09 14:47:48] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-09 14:47:49] Start transcription: File = wutuobang-01.mp3, Language = en
+[2025-07-09 14:47:49] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:47:49] ERROR: Failed to create chunk chunk_28.wav
+[2025-07-09 14:47:49] Finished transcription. Output length: 420
+[2025-07-09 14:47:49] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.txt
+[2025-07-09 14:47:49] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/wutuobang-01.txt
+[2025-07-09 14:47:53] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 14:47:53] FFmpeg return code: 0
+[2025-07-09 14:47:53] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:32:15.07, start: 0.025057, bitrate: 207 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 207 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    8192kB time=00:04:26.05 bitrate= 252.2kbits/s speed= 532x    size=   16384kB time=00:08:45.34 bitrate= 255.5kbits/s speed= 525x    size=   24576kB time=00:13:11.74 bitrate= 254.3kbits/s speed= 528x    size=   33280kB time=00:17:48.19 bitrate= 255.2kbits/s speed= 534x    size=   41728kB time=00:22:20.68 bitrate= 255.0kbits/s speed= 536x    size=   49408kB time=00:26:25.05 bitrate= 255.4kbits/s speed= 528x    size=   57600kB time=00:30:48.68 bitrate= 255.2kbits/s speed= 528x    size=   60470kB time=00:32:15.03 bitrate= 256.0kbits/s speed= 525x
+video:0kB audio:60470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000126%
+[2025-07-09 14:47:53] ERROR: FFmpeg conversion failed.
+[2025-07-09 14:49:19] Start transcription: File = wutuobang-01.mp3, Language = en
+[2025-07-09 14:49:23] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 14:49:23] FFmpeg return code: 0
+[2025-07-09 14:49:23] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:32:15.07, start: 0.025057, bitrate: 207 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 207 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7168kB time=00:03:57.42 bitrate= 247.3kbits/s speed= 475x    size=   15872kB time=00:08:29.38 bitrate= 255.3kbits/s speed= 509x    size=   24320kB time=00:13:02.08 bitrate= 254.7kbits/s speed= 521x    size=   33024kB time=00:17:36.78 bitrate= 256.0kbits/s speed= 528x    size=   41472kB time=00:22:09.26 bitrate= 255.6kbits/s speed= 532x    size=   49920kB time=00:26:43.47 bitrate= 255.0kbits/s speed= 534x    size=   58368kB time=00:31:15.72 bitrate= 254.9kbits/s speed= 536x    size=   60470kB time=00:32:15.03 bitrate= 256.0kbits/s speed= 536x
+video:0kB audio:60470kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000126%
+[2025-07-09 14:49:23] Converted WAV size: 61921196 bytes
+[2025-07-09 14:49:23] Processing chunk 0 from 0 sec
+[2025-07-09 14:49:23] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-09 14:49:24] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:24] Processing chunk 1 from 60 sec
+[2025-07-09 14:49:24] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-09 14:49:26] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:26] Processing chunk 2 from 120 sec
+[2025-07-09 14:49:26] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-09 14:49:27] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:27] Processing chunk 3 from 180 sec
+[2025-07-09 14:49:27] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-09 14:49:28] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:28] Processing chunk 4 from 240 sec
+[2025-07-09 14:49:28] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-09 14:49:30] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:30] Processing chunk 5 from 300 sec
+[2025-07-09 14:49:30] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-09 14:49:33] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:33] Processing chunk 6 from 360 sec
+[2025-07-09 14:49:33] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-09 14:49:35] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:35] Processing chunk 7 from 420 sec
+[2025-07-09 14:49:35] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-09 14:49:36] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:36] Processing chunk 8 from 480 sec
+[2025-07-09 14:49:36] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-09 14:49:39] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:39] Processing chunk 9 from 540 sec
+[2025-07-09 14:49:39] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-09 14:49:41] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:41] Processing chunk 10 from 600 sec
+[2025-07-09 14:49:41] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-09 14:49:42] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:42] Processing chunk 11 from 660 sec
+[2025-07-09 14:49:42] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-09 14:49:43] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:43] Processing chunk 12 from 720 sec
+[2025-07-09 14:49:43] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-09 14:49:45] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:45] Processing chunk 13 from 780 sec
+[2025-07-09 14:49:45] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-09 14:49:46] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:46] Processing chunk 14 from 840 sec
+[2025-07-09 14:49:46] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-09 14:49:47] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:47] Processing chunk 15 from 900 sec
+[2025-07-09 14:49:47] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-09 14:49:48] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:49] Processing chunk 16 from 960 sec
+[2025-07-09 14:49:49] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-09 14:49:50] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:50] Processing chunk 17 from 1020 sec
+[2025-07-09 14:49:50] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-09 14:49:52] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:52] Processing chunk 18 from 1080 sec
+[2025-07-09 14:49:52] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-09 14:49:53] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:53] Processing chunk 19 from 1140 sec
+[2025-07-09 14:49:53] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-09 14:49:54] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:54] Processing chunk 20 from 1200 sec
+[2025-07-09 14:49:54] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-09 14:49:55] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:55] Processing chunk 21 from 1260 sec
+[2025-07-09 14:49:55] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-09 14:49:56] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:56] Processing chunk 22 from 1320 sec
+[2025-07-09 14:49:56] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-09 14:49:57] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:57] Processing chunk 23 from 1380 sec
+[2025-07-09 14:49:57] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-09 14:49:58] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:49:58] Processing chunk 24 from 1440 sec
+[2025-07-09 14:49:58] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-09 14:50:01] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:01] Processing chunk 25 from 1500 sec
+[2025-07-09 14:50:01] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-09 14:50:03] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:03] Processing chunk 26 from 1560 sec
+[2025-07-09 14:50:03] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-09 14:50:08] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:08] Processing chunk 27 from 1620 sec
+[2025-07-09 14:50:08] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-09 14:50:09] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:09] Processing chunk 28 from 1680 sec
+[2025-07-09 14:50:09] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-09 14:50:10] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:10] Processing chunk 29 from 1740 sec
+[2025-07-09 14:50:10] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-09 14:50:12] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:12] Processing chunk 30 from 1800 sec
+[2025-07-09 14:50:12] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-09 14:50:12] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:13] Processing chunk 31 from 1860 sec
+[2025-07-09 14:50:13] Sending chunk to OpenAI: chunk_31.wav
+[2025-07-09 14:50:15] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:15] Processing chunk 32 from 1920 sec
+[2025-07-09 14:50:15] Sending chunk to OpenAI: chunk_32.wav
+[2025-07-09 14:50:15] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 14:50:15] Finished transcription. Output length: 495
+[2025-07-09 14:50:15] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/wutuobang-01.txt
+[2025-07-09 14:50:15] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/wutuobang-01.txt
+[2025-07-09 15:02:37] Start transcription: File = kitboga-30mins.mp3, Language = en
+[2025-07-09 15:02:40] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 15:02:40] FFmpeg return code: 0
+[2025-07-09 15:02:40] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:30:45.52, start: 0.025057, bitrate: 125 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 125 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    8960kB time=00:04:48.10 bitrate= 254.8kbits/s speed= 576x    size=   18432kB time=00:09:53.29 bitrate= 254.5kbits/s speed= 593x    size=   27904kB time=00:14:59.13 bitrate= 254.2kbits/s speed= 599x    size=   37632kB time=00:20:06.36 bitrate= 255.5kbits/s speed= 603x    size=   47104kB time=00:25:09.51 bitrate= 255.6kbits/s speed= 604x    size=   55040kB time=00:29:26.47 bitrate= 255.2kbits/s speed= 589x    size=   57671kB time=00:30:45.47 bitrate= 256.0kbits/s speed= 588x
+video:0kB audio:57671kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000132%
+[2025-07-09 15:02:40] Converted WAV size: 59055296 bytes
+[2025-07-09 15:02:40] Processing chunk 0 from 0 sec
+[2025-07-09 15:02:40] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-09 15:02:43] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:43] Processing chunk 1 from 60 sec
+[2025-07-09 15:02:43] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-09 15:02:44] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:44] Processing chunk 2 from 120 sec
+[2025-07-09 15:02:44] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-09 15:02:45] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:45] Processing chunk 3 from 180 sec
+[2025-07-09 15:02:45] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-09 15:02:47] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:47] Processing chunk 4 from 240 sec
+[2025-07-09 15:02:47] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-09 15:02:50] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:50] Processing chunk 5 from 300 sec
+[2025-07-09 15:02:50] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-09 15:02:52] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:52] Processing chunk 6 from 360 sec
+[2025-07-09 15:02:52] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-09 15:02:54] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:54] Processing chunk 7 from 420 sec
+[2025-07-09 15:02:54] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-09 15:02:56] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:56] Processing chunk 8 from 480 sec
+[2025-07-09 15:02:56] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-09 15:02:58] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:02:58] Processing chunk 9 from 540 sec
+[2025-07-09 15:02:58] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-09 15:03:00] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:00] Processing chunk 10 from 600 sec
+[2025-07-09 15:03:00] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-09 15:03:03] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:03] Processing chunk 11 from 660 sec
+[2025-07-09 15:03:03] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-09 15:03:08] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:08] Processing chunk 12 from 720 sec
+[2025-07-09 15:03:08] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-09 15:03:09] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:09] Processing chunk 13 from 780 sec
+[2025-07-09 15:03:09] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-09 15:03:11] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:11] Processing chunk 14 from 840 sec
+[2025-07-09 15:03:11] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-09 15:03:13] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:13] Processing chunk 15 from 900 sec
+[2025-07-09 15:03:13] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-09 15:03:14] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:14] Processing chunk 16 from 960 sec
+[2025-07-09 15:03:14] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-09 15:03:16] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:16] Processing chunk 17 from 1020 sec
+[2025-07-09 15:03:16] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-09 15:03:16] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:17] Processing chunk 18 from 1080 sec
+[2025-07-09 15:03:17] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-09 15:03:18] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:18] Processing chunk 19 from 1140 sec
+[2025-07-09 15:03:18] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-09 15:03:19] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:19] Processing chunk 20 from 1200 sec
+[2025-07-09 15:03:19] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-09 15:03:21] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:21] Processing chunk 21 from 1260 sec
+[2025-07-09 15:03:21] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-09 15:03:22] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:22] Processing chunk 22 from 1320 sec
+[2025-07-09 15:03:22] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-09 15:03:23] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:23] Processing chunk 23 from 1380 sec
+[2025-07-09 15:03:23] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-09 15:03:25] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:25] Processing chunk 24 from 1440 sec
+[2025-07-09 15:03:25] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-09 15:03:25] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:26] Processing chunk 25 from 1500 sec
+[2025-07-09 15:03:26] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-09 15:03:27] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:27] Processing chunk 26 from 1560 sec
+[2025-07-09 15:03:27] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-09 15:03:28] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:28] Processing chunk 27 from 1620 sec
+[2025-07-09 15:03:28] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-09 15:03:28] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:29] Processing chunk 28 from 1680 sec
+[2025-07-09 15:03:29] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-09 15:03:31] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:31] Processing chunk 29 from 1740 sec
+[2025-07-09 15:03:31] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-09 15:03:32] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:32] Processing chunk 30 from 1800 sec
+[2025-07-09 15:03:32] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-09 15:03:34] ERROR: Chunk transcription failed. HTTP Code: 429
+[2025-07-09 15:03:34] Finished transcription. Output length: 465
+[2025-07-09 15:03:34] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.txt
+[2025-07-09 15:03:34] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/kitboga-30mins.txt
+[2025-07-09 15:03:40] Start transcription: File = kitboga-30mins.mp3, Language = en
+[2025-07-09 15:03:43] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 15:03:43] FFmpeg return code: 0
+[2025-07-09 15:03:43] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:30:45.52, start: 0.025057, bitrate: 125 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 125 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    7680kB time=00:04:11.35 bitrate= 250.3kbits/s speed= 503x    size=   17152kB time=00:09:16.32 bitrate= 252.6kbits/s speed= 556x    size=   26624kB time=00:14:19.16 bitrate= 253.9kbits/s speed= 573x    size=   36352kB time=00:19:26.26 bitrate= 255.3kbits/s speed= 583x    size=   45824kB time=00:24:26.48 bitrate= 256.0kbits/s speed= 587x    size=   55296kB time=00:29:32.85 bitrate= 255.5kbits/s speed= 591x    size=   57671kB time=00:30:45.47 bitrate= 256.0kbits/s speed= 590x
+video:0kB audio:57671kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000132%
+[2025-07-09 15:03:43] Converted WAV size: 59055296 bytes
+[2025-07-09 15:03:44] Processing chunk 0 from 0 sec
+[2025-07-09 15:03:44] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-09 15:03:47] Chunk transcription succeeded
+[2025-07-09 15:03:47] Processing chunk 1 from 60 sec
+[2025-07-09 15:03:47] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-09 15:03:52] Chunk transcription succeeded
+[2025-07-09 15:03:52] Processing chunk 2 from 120 sec
+[2025-07-09 15:03:52] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-09 15:03:56] Chunk transcription succeeded
+[2025-07-09 15:03:56] Processing chunk 3 from 180 sec
+[2025-07-09 15:03:56] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-09 15:04:00] Chunk transcription succeeded
+[2025-07-09 15:04:00] Processing chunk 4 from 240 sec
+[2025-07-09 15:04:00] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-09 15:04:10] Chunk transcription succeeded
+[2025-07-09 15:04:10] Processing chunk 5 from 300 sec
+[2025-07-09 15:04:10] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-09 15:04:13] Chunk transcription succeeded
+[2025-07-09 15:04:13] Processing chunk 6 from 360 sec
+[2025-07-09 15:04:13] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-09 15:04:17] Chunk transcription succeeded
+[2025-07-09 15:04:17] Processing chunk 7 from 420 sec
+[2025-07-09 15:04:17] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-09 15:04:20] Chunk transcription succeeded
+[2025-07-09 15:04:20] Processing chunk 8 from 480 sec
+[2025-07-09 15:04:20] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-09 15:04:26] Chunk transcription succeeded
+[2025-07-09 15:04:26] Processing chunk 9 from 540 sec
+[2025-07-09 15:04:26] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-09 15:04:30] Chunk transcription succeeded
+[2025-07-09 15:04:30] Processing chunk 10 from 600 sec
+[2025-07-09 15:04:30] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-09 15:04:33] Chunk transcription succeeded
+[2025-07-09 15:04:33] Processing chunk 11 from 660 sec
+[2025-07-09 15:04:33] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-09 15:04:38] Chunk transcription succeeded
+[2025-07-09 15:04:39] Processing chunk 12 from 720 sec
+[2025-07-09 15:04:39] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-09 15:04:40] Start transcription: File = kitboga-30mins.mp3, Language = en
+[2025-07-09 15:04:43] FFmpeg command: ffmpeg -y -i '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3' -ar 16000 -ac 1 -c:a pcm_s16le 'converted.wav' 2>&1
+[2025-07-09 15:04:43] FFmpeg return code: 0
+[2025-07-09 15:04:43] FFmpeg output:
+ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm7 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm7 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mp3, from '/var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.mp3':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    encoder         : Lavf60.16.100
+  Duration: 00:30:45.52, start: 0.025057, bitrate: 125 kb/s
+  Stream #0:0: Audio: mp3, 44100 Hz, stereo, fltp, 125 kb/s
+    Metadata:
+      encoder         : Lavc60.31
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to 'converted.wav':
+  Metadata:
+    major_brand     : dash
+    minor_version   : 0
+    compatible_brands: iso6mp41
+    ISFT            : Lavf58.76.100
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 16000 Hz, mono, s16, 256 kb/s
+    Metadata:
+      encoder         : Lavc58.134.100 pcm_s16le
+size=       0kB time=00:00:00.00 bitrate=N/A speed=N/A    size=    8960kB time=00:04:54.71 bitrate= 249.1kbits/s speed= 589x    size=   18688kB time=00:10:01.62 bitrate= 254.5kbits/s speed= 602x    size=   28416kB time=00:15:09.29 bitrate= 256.0kbits/s speed= 606x    size=   37888kB time=00:20:16.99 bitrate= 255.0kbits/s speed= 608x    size=   47360kB time=00:25:21.84 bitrate= 254.9kbits/s speed= 609x    size=   56832kB time=00:30:23.29 bitrate= 255.3kbits/s speed= 608x    size=   57671kB time=00:30:45.47 bitrate= 256.0kbits/s speed= 607x
+video:0kB audio:57671kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000132%
+[2025-07-09 15:04:43] Converted WAV size: 59055296 bytes
+[2025-07-09 15:04:44] Processing chunk 0 from 0 sec
+[2025-07-09 15:04:44] Sending chunk to OpenAI: chunk_0.wav
+[2025-07-09 15:04:44] Chunk transcription succeeded
+[2025-07-09 15:04:44] Processing chunk 13 from 780 sec
+[2025-07-09 15:04:44] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-09 15:04:47] Chunk transcription succeeded
+[2025-07-09 15:04:47] Processing chunk 1 from 60 sec
+[2025-07-09 15:04:47] Sending chunk to OpenAI: chunk_1.wav
+[2025-07-09 15:04:48] Chunk transcription succeeded
+[2025-07-09 15:04:49] Processing chunk 14 from 840 sec
+[2025-07-09 15:04:49] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-09 15:04:52] Chunk transcription succeeded
+[2025-07-09 15:04:52] Processing chunk 15 from 900 sec
+[2025-07-09 15:04:52] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-09 15:04:55] Chunk transcription succeeded
+[2025-07-09 15:04:55] Processing chunk 2 from 120 sec
+[2025-07-09 15:04:55] Sending chunk to OpenAI: chunk_2.wav
+[2025-07-09 15:04:56] Chunk transcription succeeded
+[2025-07-09 15:04:56] Processing chunk 16 from 960 sec
+[2025-07-09 15:04:56] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-09 15:05:03] Chunk transcription succeeded
+[2025-07-09 15:05:03] Processing chunk 3 from 180 sec
+[2025-07-09 15:05:03] Sending chunk to OpenAI: chunk_3.wav
+[2025-07-09 15:05:06] Chunk transcription succeeded
+[2025-07-09 15:05:06] Processing chunk 4 from 240 sec
+[2025-07-09 15:05:06] Sending chunk to OpenAI: chunk_4.wav
+[2025-07-09 15:05:13] Chunk transcription succeeded
+[2025-07-09 15:05:13] Processing chunk 17 from 1020 sec
+[2025-07-09 15:05:13] Sending chunk to OpenAI: chunk_17.wav
+[2025-07-09 15:05:18] Chunk transcription succeeded
+[2025-07-09 15:05:18] Chunk transcription succeeded
+[2025-07-09 15:05:18] Processing chunk 5 from 300 sec
+[2025-07-09 15:05:18] Sending chunk to OpenAI: chunk_5.wav
+[2025-07-09 15:05:18] Processing chunk 18 from 1080 sec
+[2025-07-09 15:05:18] Sending chunk to OpenAI: chunk_18.wav
+[2025-07-09 15:05:22] Chunk transcription succeeded
+[2025-07-09 15:05:22] Processing chunk 19 from 1140 sec
+[2025-07-09 15:05:22] Sending chunk to OpenAI: chunk_19.wav
+[2025-07-09 15:05:23] Chunk transcription succeeded
+[2025-07-09 15:05:23] Processing chunk 6 from 360 sec
+[2025-07-09 15:05:23] Sending chunk to OpenAI: chunk_6.wav
+[2025-07-09 15:05:26] Chunk transcription succeeded
+[2025-07-09 15:05:26] Processing chunk 20 from 1200 sec
+[2025-07-09 15:05:26] Sending chunk to OpenAI: chunk_20.wav
+[2025-07-09 15:05:28] Chunk transcription succeeded
+[2025-07-09 15:05:29] Processing chunk 7 from 420 sec
+[2025-07-09 15:05:29] Sending chunk to OpenAI: chunk_7.wav
+[2025-07-09 15:05:32] Chunk transcription succeeded
+[2025-07-09 15:05:32] Processing chunk 8 from 480 sec
+[2025-07-09 15:05:32] Sending chunk to OpenAI: chunk_8.wav
+[2025-07-09 15:05:34] Chunk transcription succeeded
+[2025-07-09 15:05:34] Processing chunk 21 from 1260 sec
+[2025-07-09 15:05:34] Sending chunk to OpenAI: chunk_21.wav
+[2025-07-09 15:05:38] Chunk transcription succeeded
+[2025-07-09 15:05:38] Processing chunk 22 from 1320 sec
+[2025-07-09 15:05:38] Sending chunk to OpenAI: chunk_22.wav
+[2025-07-09 15:05:39] Chunk transcription succeeded
+[2025-07-09 15:05:39] Processing chunk 9 from 540 sec
+[2025-07-09 15:05:39] Sending chunk to OpenAI: chunk_9.wav
+[2025-07-09 15:05:42] Chunk transcription succeeded
+[2025-07-09 15:05:42] Processing chunk 10 from 600 sec
+[2025-07-09 15:05:42] Sending chunk to OpenAI: chunk_10.wav
+[2025-07-09 15:05:43] Chunk transcription succeeded
+[2025-07-09 15:05:44] Processing chunk 23 from 1380 sec
+[2025-07-09 15:05:44] Sending chunk to OpenAI: chunk_23.wav
+[2025-07-09 15:05:45] Chunk transcription succeeded
+[2025-07-09 15:05:45] Processing chunk 11 from 660 sec
+[2025-07-09 15:05:45] Sending chunk to OpenAI: chunk_11.wav
+[2025-07-09 15:05:48] Chunk transcription succeeded
+[2025-07-09 15:05:48] Processing chunk 24 from 1440 sec
+[2025-07-09 15:05:48] Sending chunk to OpenAI: chunk_24.wav
+[2025-07-09 15:05:49] Chunk transcription succeeded
+[2025-07-09 15:05:49] Processing chunk 12 from 720 sec
+[2025-07-09 15:05:49] Sending chunk to OpenAI: chunk_12.wav
+[2025-07-09 15:05:54] Chunk transcription succeeded
+[2025-07-09 15:05:54] Processing chunk 25 from 1500 sec
+[2025-07-09 15:05:54] Sending chunk to OpenAI: chunk_25.wav
+[2025-07-09 15:05:54] Chunk transcription succeeded
+[2025-07-09 15:05:54] Processing chunk 13 from 780 sec
+[2025-07-09 15:05:54] Sending chunk to OpenAI: chunk_13.wav
+[2025-07-09 15:05:58] Chunk transcription succeeded
+[2025-07-09 15:05:58] Processing chunk 26 from 1560 sec
+[2025-07-09 15:05:58] Sending chunk to OpenAI: chunk_26.wav
+[2025-07-09 15:05:59] Chunk transcription succeeded
+[2025-07-09 15:05:59] Processing chunk 14 from 840 sec
+[2025-07-09 15:05:59] Sending chunk to OpenAI: chunk_14.wav
+[2025-07-09 15:06:03] Chunk transcription succeeded
+[2025-07-09 15:06:03] Processing chunk 27 from 1620 sec
+[2025-07-09 15:06:03] Sending chunk to OpenAI: chunk_27.wav
+[2025-07-09 15:06:03] Chunk transcription succeeded
+[2025-07-09 15:06:03] Processing chunk 15 from 900 sec
+[2025-07-09 15:06:03] Sending chunk to OpenAI: chunk_15.wav
+[2025-07-09 15:06:08] Chunk transcription succeeded
+[2025-07-09 15:06:08] Processing chunk 28 from 1680 sec
+[2025-07-09 15:06:08] Sending chunk to OpenAI: chunk_28.wav
+[2025-07-09 15:06:10] Chunk transcription succeeded
+[2025-07-09 15:06:10] Processing chunk 29 from 1740 sec
+[2025-07-09 15:06:10] Sending chunk to OpenAI: chunk_29.wav
+[2025-07-09 15:06:14] Chunk transcription succeeded
+[2025-07-09 15:06:14] Processing chunk 30 from 1800 sec
+[2025-07-09 15:06:14] Sending chunk to OpenAI: chunk_30.wav
+[2025-07-09 15:06:18] Chunk transcription succeeded
+[2025-07-09 15:06:18] Processing chunk 16 from 960 sec
+[2025-07-09 15:06:18] Sending chunk to OpenAI: chunk_16.wav
+[2025-07-09 15:06:19] Chunk transcription succeeded
+[2025-07-09 15:06:19] Finished transcription. Output length: 22040
+[2025-07-09 15:06:19] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.txt
+[2025-07-09 15:06:19] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/kitboga-30mins.txt
+[2025-07-09 15:06:27] Chunk transcription succeeded
+[2025-07-09 15:06:27] ERROR: Failed to create chunk chunk_17.wav
+[2025-07-09 15:06:27] Finished transcription. Output length: 12874
+[2025-07-09 15:06:27] Saved transcription to: /var/www/cloud.webbypage.com/data/brandonchong/files/AI-Workplace/Audio/kitboga-30mins.txt
+[2025-07-09 15:06:27] Saved transcription copy to: /var/www/videostreamer/transcribe/transcribed/kitboga-30mins.txt

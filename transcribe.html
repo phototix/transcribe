@@ -14,6 +14,42 @@
       padding: 1rem;
       border: 1px solid #ccc;
     }
+    .file-list {
+      max-height: 300px;
+      overflow-y: auto;
+      margin-top: 20px;
+    }
+    .file-item {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .file-item:hover {
+      background-color: #f5f5f5;
+    }
+    .status-badge {
+      font-size: 0.8rem;
+      padding: 3px 8px;
+      border-radius: 10px;
+    }
+    .status-processing {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+    .status-completed {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .progress-container {
+      width: 100%;
+      margin-top: 5px;
+    }
+    .chunk-indicator {
+      font-size: 0.8rem;
+      color: #6c757d;
+    }
   </style>
 </head>
 <body>
@@ -35,7 +71,26 @@
         </select>
       </div>
       <button id="startBtn" style="margin-top:15px;" class="btn btn-primary">Start Transcription</button>
+      <div id="progressContainer" class="progress-container d-none mt-2">
+        <div class="progress">
+          <div id="transcriptionProgress" class="progress-bar progress-bar-striped progress-bar-animated" 
+               role="progressbar" style="width: 0%"></div>
+        </div>
+        <small id="progressText" class="text-muted">Processing...</small>
+        <div id="chunkInfo" class="chunk-indicator"></div>
+      </div>
       <a id="downloadBtn" class="btn btn-success d-none mt-3" download>Download Transcription</a>
+      
+      <!-- Transcription Files Section -->
+      <div class="mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h5>Available Transcription Files</h5>
+          <button id="refreshFilesBtn" class="btn btn-sm btn-outline-secondary">Refresh</button>
+        </div>
+        <div id="transcriptionFiles" class="file-list">
+          <div class="text-muted">Loading transcription files...</div>
+        </div>
+      </div>
     </div>
     <div class="col-md-7">
       <h5>Transcription Output</h5>
@@ -46,46 +101,196 @@
 
 <script>
 const apiEndpoint = 'transcribe.php';
-const checkInterval = 3000; // ms
-const maxAttempts = 20; // try for 60 seconds (20 x 3s)
+const statusEndpoint = 'check_status.php'; // New endpoint to check transcription status
+const checkInterval = 10000; // Check every 10 seconds for long-running processes
+const transcribedFilesPath = '/transcribe/transcribed/'; // Fixed path for completed files
+
+// Store current transcription job ID if any
+let currentJobId = null;
+let currentAudioFile = null;
 
 async function fetchAudioFiles() {
-  const response = await fetch('list_audio.php');
-  const files = await response.json();
-  const select = document.getElementById('audioFile');
-  select.innerHTML = '<option value="">-- Choose a file --</option>';
-  files.forEach(file => {
-    const opt = document.createElement('option');
-    opt.value = file;
-    opt.textContent = file;
-    select.appendChild(opt);
-  });
-}
-
-async function fileExists(url) {
   try {
-    const res = await fetch(url, { method: 'HEAD' });
-    return res.ok;
-  } catch {
-    return false;
+    const response = await fetch('list_audio.php');
+    const files = await response.json();
+    const select = document.getElementById('audioFile');
+    select.innerHTML = '<option value="">-- Choose a file --</option>';
+    files.forEach(file => {
+      const opt = document.createElement('option');
+      opt.value = file;
+      opt.textContent = file;
+      select.appendChild(opt);
+    });
+  } catch (error) {
+    console.error('Error loading audio files:', error);
   }
 }
 
-async function pollForFile(url, attempt = 1) {
-  if (attempt > maxAttempts) {
-    document.getElementById('transcriptionOutput').textContent = '❌ Transcription timeout. Please try again.';
-    return;
+async function fetchTranscriptionFiles() {
+  try {
+    // First check for completed files in /transcribe/transcribed/
+    const response = await fetch('list_files.php');
+    const completedFiles = await response.json();
+    
+    // Then check for in-progress jobs
+    const statusResponse = await fetch('list_jobs.php');
+    const activeJobs = await statusResponse.json();
+    
+    const container = document.getElementById('transcriptionFiles');
+    
+    if (completedFiles.length === 0 && (!activeJobs || activeJobs.length === 0)) {
+      container.innerHTML = '<div class="text-muted">No transcription files available yet.</div>';
+      return;
+    }
+    
+    container.innerHTML = '';
+    
+    // Display active jobs first
+    if (activeJobs && activeJobs.length > 0) {
+      activeJobs.forEach(job => {
+        const fileDiv = document.createElement('div');
+        fileDiv.className = 'file-item';
+        
+        const fileInfo = document.createElement('div');
+        fileInfo.style.flex = '1';
+        
+        const fileName = document.createElement('div');
+        fileName.textContent = job.audioFile;
+        fileName.style.fontWeight = '500';
+        
+        const fileStatus = document.createElement('div');
+        fileStatus.className = 'status-badge status-processing';
+        fileStatus.textContent = 'Processing';
+        
+        fileInfo.appendChild(fileName);
+        fileInfo.appendChild(fileStatus);
+        
+        // Add progress info
+        const progressContainer = document.createElement('div');
+        progressContainer.className = 'progress-container';
+        
+        const progressBar = document.createElement('div');
+        progressBar.className = 'progress';
+        progressBar.style.height = '5px';
+        
+        const progress = document.createElement('div');
+        progress.className = 'progress-bar progress-bar-striped progress-bar-animated';
+        progress.style.width = `${job.progress || 0}%`;
+        progress.setAttribute('role', 'progressbar');
+        
+        progressBar.appendChild(progress);
+        progressContainer.appendChild(progressBar);
+        
+        const chunkInfo = document.createElement('div');
+        chunkInfo.className = 'chunk-indicator';
+        chunkInfo.textContent = `Chunk ${job.currentChunk || 0} of ${job.totalChunks || '?'}`;
+        progressContainer.appendChild(chunkInfo);
+        
+        fileInfo.appendChild(progressContainer);
+        fileDiv.appendChild(fileInfo);
+        
+        // Add resume button
+        const resumeBtn = document.createElement('button');
+        resumeBtn.className = 'btn btn-sm btn-outline-warning';
+        resumeBtn.textContent = 'Check Status';
+        resumeBtn.onclick = () => checkTranscriptionStatus(job.jobId, job.audioFile);
+        fileDiv.appendChild(resumeBtn);
+        
+        container.appendChild(fileDiv);
+      });
+    }
+    
+    // Then display completed files
+    if (completedFiles.length > 0) {
+      completedFiles.forEach(file => {
+        const fileDiv = document.createElement('div');
+        fileDiv.className = 'file-item';
+        
+        const fileInfo = document.createElement('div');
+        fileInfo.style.flex = '1';
+        
+        const fileName = document.createElement('div');
+        fileName.textContent = file;
+        fileName.style.fontWeight = '500';
+        
+        const fileStatus = document.createElement('div');
+        fileStatus.className = 'status-badge status-completed';
+        fileStatus.textContent = 'Ready';
+        
+        fileInfo.appendChild(fileName);
+        fileInfo.appendChild(fileStatus);
+        fileDiv.appendChild(fileInfo);
+        
+        // Add download button
+        const downloadLink = document.createElement('a');
+        downloadLink.href = transcribedFilesPath + file;
+        downloadLink.className = 'btn btn-sm btn-outline-primary';
+        downloadLink.download = file;
+        downloadLink.textContent = 'Download';
+        fileDiv.appendChild(downloadLink);
+        
+        container.appendChild(fileDiv);
+      });
+    }
+  } catch (error) {
+    document.getElementById('transcriptionFiles').innerHTML = 
+      '<div class="text-danger">Error loading files</div>';
+    console.error('Error fetching files:', error);
   }
+}
 
-  const exists = await fileExists(url);
-  if (exists) {
-    const dlBtn = document.getElementById('downloadBtn');
-    dlBtn.href = url;
-    dlBtn.download = url.split('/').pop();
-    dlBtn.classList.remove('d-none');
-    document.getElementById('transcriptionOutput').textContent = '✅ Transcription completed.';
-  } else {
-    setTimeout(() => pollForFile(url, attempt + 1), checkInterval);
+async function checkTranscriptionStatus(jobId, audioFile) {
+  currentJobId = jobId;
+  currentAudioFile = audioFile;
+  
+  const output = document.getElementById('transcriptionOutput');
+  output.textContent = `⏳ Checking status for ${audioFile}...`;
+  
+  const progressContainer = document.getElementById('progressContainer');
+  progressContainer.classList.remove('d-none');
+  
+  try {
+    const response = await fetch(`${statusEndpoint}?jobId=${jobId}`);
+    const data = await response.json();
+    
+    if (data.status === 'completed') {
+      output.textContent = `✅ Transcription completed for ${audioFile}`;
+      progressContainer.classList.add('d-none');
+      document.getElementById('transcriptionProgress').style.width = '100%';
+      document.getElementById('progressText').textContent = 'Completed';
+      document.getElementById('chunkInfo').textContent = '';
+      
+      // Update download button
+      const dlBtn = document.getElementById('downloadBtn');
+      dlBtn.href = transcribedFilesPath + data.fileName;
+      dlBtn.download = data.fileName;
+      dlBtn.classList.remove('d-none');
+      
+      // Refresh files list
+      fetchTranscriptionFiles();
+    } 
+    else if (data.status === 'processing') {
+      const progress = data.progress || 0;
+      output.textContent = `⏳ Processing ${audioFile}`;
+      document.getElementById('transcriptionProgress').style.width = `${progress}%`;
+      document.getElementById('progressText').textContent = `${progress}% processed`;
+      
+      // Update chunk info
+      const chunkInfo = document.getElementById('chunkInfo');
+      if (data.currentChunk && data.totalChunks) {
+        chunkInfo.textContent = `Processing chunk ${data.currentChunk} of ${data.totalChunks}`;
+      }
+      
+      // Continue polling
+      setTimeout(() => checkTranscriptionStatus(jobId, audioFile), checkInterval);
+    }
+    else if (data.status === 'failed') {
+      output.textContent = `❌ Transcription failed for ${audioFile}: ${data.error || 'Unknown error'}`;
+      progressContainer.classList.add('d-none');
+    }
+  } catch (error) {
+    output.textContent = `❌ Error checking status: ${error.message}`;
+    console.error('Status check error:', error);
   }
 }
 
@@ -93,31 +298,79 @@ async function startTranscription() {
   const file = document.getElementById('audioFile').value;
   const lang = document.getElementById('language').value;
   if (!file) return alert('Please select an audio file');
-
+  
+  currentAudioFile = file;
   const output = document.getElementById('transcriptionOutput');
-  output.textContent = '⏳ Transcribing...';
-
-  const response = await fetch(apiEndpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ file, language: lang })
-  });
-
-  const data = await response.json();
-  const txtFileUrl = '/transcribe/transcribed/' + file.replace(/\.mp3$/, '.txt');
-
-  if (data.success) {
-    // Now start polling for the .txt file existence
-    output.textContent = '⏳ Waiting for transcription file...';
-    pollForFile(txtFileUrl);
-  } else {
-    output.textContent = '❌ Transcription failed: ' + (data.error || 'Unknown error');
+  output.textContent = `⏳ Starting transcription for ${file}...`;
+  
+  const progressContainer = document.getElementById('progressContainer');
+  progressContainer.classList.remove('d-none');
+  document.getElementById('transcriptionProgress').style.width = '0%';
+  document.getElementById('progressText').textContent = 'Starting...';
+  document.getElementById('chunkInfo').textContent = '';
+  
+  try {
+    const response = await fetch(apiEndpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ file, language: lang })
+    });
+    const data = await response.json();
+    
+    if (data.success && data.jobId) {
+      currentJobId = data.jobId;
+      output.textContent = `⏳ Transcription started for ${file}. Job ID: ${data.jobId}`;
+      
+      // Start polling for status
+      setTimeout(() => checkTranscriptionStatus(data.jobId, file), 2000);
+      
+      // Refresh files list to show the new job
+      fetchTranscriptionFiles();
+    } else {
+      output.textContent = '❌ Transcription failed to start: ' + (data.error || 'Unknown error');
+      progressContainer.classList.add('d-none');
+    }
+  } catch (error) {
+    output.textContent = '❌ Error starting transcription: ' + error.message;
+    progressContainer.classList.add('d-none');
+    console.error('Transcription error:', error);
   }
 }
 
-document.getElementById('startBtn').addEventListener('click', startTranscription);
-document.addEventListener('DOMContentLoaded', fetchAudioFiles);
-</script>
+// Initialize the page
+document.addEventListener('DOMContentLoaded', () => {
+  fetchAudioFiles();
+  fetchTranscriptionFiles();
+  
+  // Check if there's a job in progress in localStorage
+  const savedJob = localStorage.getItem('currentTranscriptionJob');
+  if (savedJob) {
+    try {
+      const { jobId, audioFile } = JSON.parse(savedJob);
+      currentJobId = jobId;
+      currentAudioFile = audioFile;
+      checkTranscriptionStatus(jobId, audioFile);
+    } catch (e) {
+      console.error('Error loading saved job:', e);
+    }
+  }
+});
 
+// Save current job when leaving the page
+window.addEventListener('beforeunload', () => {
+  if (currentJobId && currentAudioFile) {
+    localStorage.setItem('currentTranscriptionJob', JSON.stringify({
+      jobId: currentJobId,
+      audioFile: currentAudioFile
+    }));
+  }
+});
+
+// Refresh files list when button clicked
+document.getElementById('refreshFilesBtn').addEventListener('click', fetchTranscriptionFiles);
+
+// Start transcription button
+document.getElementById('startBtn').addEventListener('click', startTranscription);
+</script>
 </body>
 </html>
